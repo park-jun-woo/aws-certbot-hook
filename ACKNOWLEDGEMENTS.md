@@ -1,6 +1,6 @@
 # ACKNOWLEDGEMENTS
 
-This project, **certhook**, would not have been possible without the work, inspiration, and dedication of many communities, open-source contributors, and historical figures who have shaped the landscape of freedom, technology, and collaboration.
+This project, **aws-certbot-hook**, would not have been possible without the work, inspiration, and dedication of many communities, open-source contributors, and historical figures who have shaped the landscape of freedom, technology, and collaboration.
 
 ---
 
@@ -42,6 +42,6 @@ This project, **certhook**, would not have been possible without the work, inspi
 
 ---
 
-**certhook** is dedicated to everyone who believes in technological progress, freedom, and the power of collaborative effort.
+**aws-certbot-hook** is dedicated to everyone who believes in technological progress, freedom, and the power of collaborative effort.
 
 Thank you.
