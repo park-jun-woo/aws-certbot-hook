@@ -1,4 +1,4 @@
-// https://parkjunwoo.com/microstral/cmd/certhook/main.go
+// https://parkjunwoo.com/aws-certbot-hook/cmd/certhook/main.go
 package main
 
 import (

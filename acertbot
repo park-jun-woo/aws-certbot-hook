@@ -4,5 +4,5 @@ certbot certonly \
   --preferred-challenges dns \
   --manual-auth-hook "/usr/local/bin/certhook --hook=auth" \
   --manual-cleanup-hook "/usr/local/bin/certhook --hook=cleanup" \
-  --non-interactive --agree-tos --manual-public-ip-logging-ok \
+  --non-interactive --agree-tos \
   "$@"

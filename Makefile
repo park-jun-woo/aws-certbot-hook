@@ -1,4 +1,4 @@
-# https://parkjunwoo.com/microstral/Makefile
+# https://parkjunwoo.com/aws-certbot-hook/Makefile
 BINARY_NAME=certhook
 BUILD_PATH=/usr/local/bin
 
