@@ -4,7 +4,7 @@
 
 **aws-certbot-hook** is a lightweight Go binary to automate Let's Encrypt certbot DNS-01 validation on AWS Route53 domains.
 
-* Automatically detects and updates the correct Route53 HostedZone for any domain, including public suffixes (e.g. `.co.kr`, `.com.cn`).
+* Automatically detects and updates the correct Route53 HostedZone for any domain, including public suffixes (e.g. `.com`, `.co.kr`).
 * Works as a certbot --manual-auth-hook and --manual-cleanup-hook.
 * Fast, dependency-free, portable, and production-ready.
 
@@ -15,7 +15,7 @@
 * **Go single binary** (no runtime dependencies)
 * **Automatic HostedZone detection** (publicsuffix-aware)
 * **Works with AWS credentials via environment, shared config, or IAM Role**
-* **Handles any domain structure: foo.bar.domain.co.kr, example.com.cn, etc.**
+* **Handles any domain structure: foo.bar.domain.com, example.co.kr, etc.**
 * **Crontab + certbot renew** automation friendly
 
 ---
@@ -23,7 +23,7 @@
 ## 🚀 Installation & Build
 
 ```bash
-git clone https://github.com/yourrepo/aws-certbot-hook.git
+git clone https://github.com/park-jun-woo/aws-certbot-hook.git
 cd aws-certbot-hook
 
 go mod tidy
@@ -50,7 +50,7 @@ You should now have `/usr/local/bin/aws-certbot-hook` and `/usr/local/bin/acertb
 Basic example for single or multi-domain:
 
 ```bash
-acertbot -d cms-ec2.domain.co.kr --email you@domain.co.kr
+acertbot -d cms-ec2.domain.com --email you@domain.com
 ```
 
 Manual invocation:
@@ -62,7 +62,7 @@ certbot certonly \
   --manual-auth-hook "/usr/local/bin/aws-certbot-hook --hook=auth" \
   --manual-cleanup-hook "/usr/local/bin/aws-certbot-hook --hook=cleanup" \
   --non-interactive --agree-tos --manual-public-ip-logging-ok \
-  -d cms-ec2.domain.co.kr
+  -d cms-ec2.domain.com
 ```
 
 > **Tip:** Multiple `-d` domains (including wildcard) are fully supported.
@@ -102,7 +102,7 @@ MIT License (c) 2025 PARK JUN WOO
 
 ## 🙋‍♂️ Contact / Contributing
 
-* Issues, feature requests, PRs: [github.com/yourrepo/aws-certbot-hook/issues](https://github.com/yourrepo/aws-certbot-hook/issues)
+* Issues, feature requests, PRs: [github.com/park-jun-woo/aws-certbot-hook/issues](https://github.com/park-jun-woo/aws-certbot-hook/issues)
 * Bug reports or support: contact via GitHub Issues or parkjunwoo.com
 
 ---
