@@ -5,6 +5,7 @@ BUILD_PATH=/usr/local/bin
 all: build install setup
 
 build:
+	go mod tidy
 	go build -o $(BINARY_NAME) cmd/certhook/main.go
 
 install:
